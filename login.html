@@ -1,0 +1,117 @@
+<!doctype html>
+
+<head>
+  <title>mibchan_Web_Project</title>
+  <link href="rabbit.png" rel="shortcut icon" type="image/x-icon">
+  <meta charset = "utf-8">
+</head>
+
+<style>
+    h1{
+      text-align:center;
+    }
+    a{
+      color:black;
+      text-decoration:none;
+    }
+    /*.title{
+      border-style : solid;
+      border-color : red;
+    }*/
+    .login-container{
+      padding-top : 4rem;
+      background-color : #f0f0f5
+      /*margin:0;*/
+      /*border-style : solid;
+      border-color : blue;*/
+    }
+    .log_bot_container{
+      padding-bottom : 4rem;
+      background-color : #f0f0f5;
+    }
+    .bottom{
+      background-color: lightgray;
+      padding : 3.3%;
+    }
+    .login-box{
+      /*border-style : solid;
+      border-color : green;*/
+      /*padding-top : 2rem;
+      padding-bottom : 9rem;*/
+      /*margin:0;
+      width:100%;*/
+      background-color : #f0f0f5;
+    }
+    .card-box{
+      border-style : solid;
+      border-color : pink;
+      /*margin-top : 1rem;*/
+      width : 30%;
+      /*width:30rem;*/
+      margin-left : auto;
+      margin-right : auto;
+      background-color : white;
+    }
+    .login{
+      text-align : center;
+      font-size : 30px;
+      /*border-bottom : solid pink;
+      border-color : black;*/
+    }
+    .input{
+      /*border-style : solid;
+      border-color : black;
+      padding-top: 1rem;*/
+      padding-bottom : 5rem;
+      /*text-align : center;*/
+    }
+    /*.e-mail,.password{
+      text-align : left;
+      border-style : solid;
+      border : 1px solid gray;
+      margin-left : 2rem;
+      margin-right : 2rem;
+      padding-top : 1rem;
+      padding-bottom: 1rem;
+      font-size : 20px;
+    }*/
+    .form-control{
+      display:block;
+      width:80%;
+      height: calc(1.5em + 0.75rem + 2px);
+      padding: 0.375rem 0.75rem;
+      margin-left : auto;
+      margin-right : auto;
+    }
+    .login-button{
+      display:block;
+      text-align:center;
+      /*vertical-align: middle;*/
+      width: 30%;
+      height: calc(1.5em + 0.75rem + 2px);
+      margin-top:4rem;
+      margin-left:auto;
+      margin-right:auto;
+    }
+</style>
+
+<body>
+  <div class = "title">
+  <h1><a href = "index.html" title = "Do your best!">Web Project</a></h1>
+  </div>
+  <div class = "login-container"> </div>
+    <div class = "login-box">
+      <div class = "card-box">
+      <div class = "login"><h3>로그인</h3></div>
+        <div class = "input">
+          <form action = "logininfo.php">
+            <p><input type="email" name="login-email" placeholder="이메일" autofocus class="form-control"></p>
+            <p><input type="password" name="login-password" placeholder="비밀번호" class="form-control"></p>
+            <button type="submit" class="login-button">로그인</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="log_bot_container"></div>
+    <div class="bottom"></div>
+</body>

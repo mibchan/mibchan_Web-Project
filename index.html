@@ -1,0 +1,168 @@
+<!doctype html>
+
+<head>
+  <title>mibchan_Web Project</title>
+  <link href="rabbit.png" rel="shortcut icon" type="image/x-icon">
+  <meta charset = "utf-8">
+</head>
+
+<style>
+.title{
+  text-align:center;
+}
+a{
+  color : black;
+  text-decoration : none;
+}
+.container{
+  text-align:right;
+  background-color : lightpink;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+}
+.category{
+  margin-right:10px;
+  margin-left:10px;
+}
+.board{
+  margin-top:0;
+  /*border: 5px solid gray;*/
+  /*border-top:5px solid pink;*/
+  border-left: 5px solid pink;
+}
+#grid{
+  border:5px solid pink;
+  border-bottom:none;
+  display:grid;
+  grid-template-columns:1fr 5fr;
+  margin-top:10px;
+  /*padding-bottom:50px;*/
+}
+#grid2{
+  display:grid;
+  grid-template-columns: 1.015fr 5fr;
+  padding-bottom:30px;
+}
+.grid2-2{
+  text-align:right;
+}
+#categorycontainer{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.categorybox{
+  border:3px solid black;
+}
+.free{
+  margin-bottom:20px;
+}
+.board_inside{
+  margin-left:10px;
+  margin-right:10px;
+}
+table{
+  margin-top:20px;
+  width:95%;
+  border:2px solid;
+  border-collapse: collapse;
+  text-align:center;
+}
+td,th{
+  border:1px solid gray;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.row0{
+  border-bottom:2px solid;
+}
+.pagenum{
+  width:95%;
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:30px;
+}
+/*.writebuttonline{
+  text-align:right;
+}*/
+.writebutton{
+  display:inline;
+  border: 2px solid;
+  background-color:#f0f0f5;
+  padding: 5px;
+  padding-left:10px;
+  padding-right:10px;
+  margin-right:50px;
+}
+.bottom{
+  background-color: #f0f0f5;
+  padding : 3.3%;
+}
+
+</style>
+
+<body>
+<div class="page">
+  <div class="title"><h1><a href="index.html">Web Project</a></h1></div>
+  <div class="container">
+    <a href="login.html">로그인</a> &emsp;
+    <a href="signup.html">회원가입</a>&emsp;
+  </div>
+
+  <div id ="grid">
+    <div class="category">
+      <div><h3>카테고리</h3></div>
+      <div id ="categorycontainer">
+        <div class="categorybox">
+          <div class="free"><a href="index.html">자유게시판</a></div>
+          <div class="info"><a href="infoboard.html">정보게시판</a></div>
+        <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="board">
+      <div class="board_inside">
+      <div><h2>자유게시판</h2></div>
+      <p>자유롭게 글을 쓸 수 있는 게시판입니다.</p>
+      <form action = "search.php">
+        <select>
+          <option name="search" value="search_total">전체</option>
+          <option name="search" value="search_title">제목</option>
+          <option name="search" value="search_text">내용</option>
+          <option name="search" value="search_free">자유게시판</option>
+          <option name="search" value="search_info">정보게시판</option>
+        </select>
+        <input type="text">
+        <input type="submit" value="검색">
+      </form>
+      <table>
+          <tr class="row0">
+            <th>번호</th> <th>제목</th> <th>글쓴이</th> <th>작성일</th> <th>조회수</th> <th>추천수</th>
+          </tr>
+          <tr class="row1">
+            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
+          </tr>
+          <tr class="row2">
+            <td>2</td> <td>2</td> <td>2</td> <td>2</td> <td>2</td> <td>2</td>
+          </tr>
+          <tr class="row3">
+            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
+          </tr>
+          <tr class="row4">
+            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
+          </tr>
+          <tr class="row5">
+            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
+          </tr>
+      </table>
+      <div class="pagenum">페이지 표시</div>
+      <!--  <div class="writebuttonline"><div class="writebutton"><a href="write-page.html">글쓰기</a></div></div>    -->
+      </div>
+    </div>
+  </div>
+<div id="grid2">
+  <div class="grid2-1"></div>
+  <div class="grid2-2"><div class="writebutton"><a href="write-page.html">글쓰기</a></div></div>
+</div>
+<div class="bottom"></div>
+
+</body>
