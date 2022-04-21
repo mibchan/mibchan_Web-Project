@@ -52,7 +52,7 @@
       margin-left : auto;
       margin-right : auto;
     }
-    .login-button{
+    .signup-button{
       display:block;
       text-align:center;
       width: 30%;
@@ -67,9 +67,13 @@
     }
     .signup{
       display:inline;
-      border-bottom:2px solid;
+      border:2px solid;
       font-size:15px;
+      padding-right:10px;
+      padding-left:10px;
+      margin-right:10px;
     }
+
 </style>
 
 <body>
@@ -79,15 +83,18 @@
   <div class = "login-container"> </div>
     <div class = "login-box">
       <div class = "card-box">
-      <div class = "login"><h3>로그인</h3></div>
+      <div class = "login"><h3>회원가입</h3></div>
         <div class = "input">
-          <form action = "logininfo.php">
-            <p><input type="email" name="login-email" placeholder="이메일" autofocus class="form-control"></p>
-            <p><input type="password" name="login-password" placeholder="비밀번호" class="form-control"></p>
-            <button type="submit" class="login-button">로그인</button>
+          <form action = "signupinfo.php">
+            <p><input type="email" name="login-email" placeholder="이메일을 입력하세요" autofocus class="form-control"></p>
+            <p><input type="password" name="login-password" placeholder="비밀번호를 입력하세요" class="form-control"></p>
+            <p><input type="password" name="login-passwordre" placeholder="비밀번호를 다시 입력하세요" class="form-control"></p>
+            <p><p><input type="text" name="nickname" placeholder="사용하실 닉네임을 입력하세요" class="form-control"></p>
+            <button type="submit" class="signup-button">회원가입</button>
           </form>
+          <!-- 회원가입을 누르면 signup1로 이동해야함 -->
         </div>
-        <div class=signupline><div class="signup"><a href="signup.html">회원가입</a></div></div>
+        <!-- <div class=signupline><div class="signup"><a href="signup1.html">다음</a></div></div>  -->
       </div>
     </div>
     <div class="log_bot_container"></div>

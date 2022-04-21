@@ -79,9 +79,6 @@ td,th{
   margin-bottom:30px;
 }
 .writebutton{
-  display:inline;
-  border: 2px solid;
-  background-color:#f0f0f5;
   padding: 5px;
   padding-left:10px;
   padding-right:10px;
@@ -90,6 +87,10 @@ td,th{
 .bottom{
   background-color: lightgray;
   padding : 3.3%;
+}
+.submitbutton{
+  text-align:right;
+  padding-right:30px;
 }
 
 </style>
@@ -115,46 +116,21 @@ td,th{
     </div>
     <div class="board">
       <div class="board_inside">
-      <div><h2>자유게시판</h2></div>
-      <p>자유롭게 글을 쓰는 게시판입니다.</p>
-      <form action = "search.php">
-        <select>
-          <option name="search" value="search_total">전체</option>
-          <option name="search" value="search_title">제목</option>
-          <option name="search" value="search_text">내용</option>
-          <option name="search" value="search_free">자유게시판</option>
-          <option name="search" value="search_info">정보게시판</option>
-        </select>
-        <input type="text">
-        <input type="submit" value="검색">
+      <div><h2>정보게시판</h2></div>
+      <p>정보를 공유하는 게시판입니다.</p>
+      <form action="write.php">
+          <textarea cols=150 rows=20 autofocus>
+          </textarea>
+          <input type="file" name="profile">
+          <div class="submitbutton"><input type="submit" value="작성 완료"></input></div>
       </form>
-      <table>
-          <tr class="row0">
-            <th>번호</th> <th>제목</th> <th>글쓴이</th> <th>작성일</th> <th>조회수</th> <th>추천수</th>
-          </tr>
-          <tr class="row1">
-            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
-          </tr>
-          <tr class="row2">
-            <td>2</td> <td>2</td> <td>2</td> <td>2</td> <td>2</td> <td>2</td>
-          </tr>
-          <tr class="row3">
-            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
-          </tr>
-          <tr class="row4">
-            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
-          </tr>
-          <tr class="row5">
-            <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td> <td>1</td>
-          </tr>
-      </table>
-      <div class="pagenum">페이지 표시</div>
+      <!-- 작성 완료를 누르면 infoboard.html로 이동해야함. 입력한 정보를 반영한채로 -->
       </div>
     </div>
   </div>
 <div id="grid2">
   <div class="grid2-1"></div>
-  <div class="grid2-2"><div class="writebutton"><a href="write-freeboard.html">글쓰기</a></div></div>
+  <div class="grid2-2"><div class="writebutton"></div></div>
 </div>
 <div class="bottom"></div>
 
